@@ -1,0 +1,22 @@
+<form method="post" action="reg">
+	<div>
+		<div>Login</div>
+		<div><input type="text" name="login"></div>
+	</div>
+	<div>
+		<div>Password</div>
+		<div><input type="password" name="password1"></div>
+	</div>
+    <div>
+		<div>Repeat password</div>
+		<div><input type="password" name="password2"></div>
+	</div>
+    <div>
+		<div>Name</div>
+		<div><input type="text" name="name"></div>
+	</div>
+	<input type="submit"></input>
+	{% if  error is not empty  %}
+		<div>{{error}}</div>
+	{% endif %}
+</form>

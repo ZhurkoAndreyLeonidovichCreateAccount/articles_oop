@@ -1,0 +1,15 @@
+<h1>edit article</h1>
+<form method="post" action="{{ baseUrl }}article/edit/{{fields.id_article}}">
+	<div>
+		<div>Title</div>
+		<div><input name="title" value="{{ fields.title }}"></div>
+		<div>{{ errors.title }}</div>
+	</div>
+	<div>
+		<div>Content</div>
+		<div><textarea name="content">{{ fields.content }}</textarea></div>
+		<div>{{ errors.id_user }}</div>
+	</div>
+    <input type='hidden' name="id_user" value="{{ fields.id_user }}">
+	<button>Send</button>
+</form>
